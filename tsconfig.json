@@ -1,0 +1,48 @@
+// Majority of these are pulled from
+// https://github.com/facebook/docusaurus/blob/main/tsconfig.json
+// so this plugin is inline with the rest
+{
+  "compilerOptions": {
+    "incremental": true,
+    "tsBuildInfoFile": "./dist/.tsbuildinfo",
+    "rootDir": "src",
+    "outDir": "dist",
+    "target": "ES2019",
+    "module": "commonjs",
+    "lib": [
+      "ESNext",
+      "DOM"
+    ],
+    "declaration": true,
+    "declarationMap": false,
+    /* Strict Type-Checking Options */
+    "strict": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    /* Additional Checks */
+    "noUnusedLocals": false, // ensured by eslint, should not block compilation
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    /* Disabled on purpose (handled by ESLint, should not block compilation) */
+    "noUnusedParameters": false,
+    /* Module Resolution Options */
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    /* Advanced Options */
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    /* Use tslib */
+    "importHelpers": true,
+    "noEmitHelpers": true
+  },
+  "exclude": [
+    "node_modules",
+    "**/dist/**/*"
+  ]
+}
