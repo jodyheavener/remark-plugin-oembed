@@ -5,10 +5,10 @@ import {
   PhotoTypeData,
   RichTypeData,
 } from 'oembed-parser';
-import providers from 'oembed-parser/src/utils/providers.json';
+import providers from 'oembed-parser/src/utils/providers.orginal.json';
 import type { Plugin, Transformer } from 'unified';
 import type { Node } from 'unist';
-import visit from 'unist-util-visit';
+import { visit } from 'unist-util-visit';
 import styles from './styles';
 
 interface PluginOptions {
